@@ -1,0 +1,74 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keyboard</title>
+    <link rel="stylesheet" href="products.css">
+    <style>
+        li{
+            font-size: 20px;
+            margin: 3% 0% 4% 2%;
+        }
+        .head{
+            font-size: 45px;
+            margin: 3% 0% 4% -2%;
+        }
+        hr{
+            margin: 11% 10% 5% 10%;
+        }
+        select{
+            width: 10%;
+            transition: 0.25s;
+            font-size: 20;
+            border-radius: 10px;
+            text-align: center;
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="logo" class="logo" onclick="home()">
+    </header>
+    <div class="imgs">
+        <img src="rgbK.png" alt="white pad" id="Kimg">
+    </div>
+    <div class="laptop">
+        <h1 class="head">
+            Mechanical keyboard 
+        </h1>
+
+        <ul>About this item</ul>
+        <li>ULTIMATE FADE AND SCRATCH RESISTANCE</li>
+        <li>MULTI-FUNCTION ROLLER AND MEDIA BUTTON</li>
+        <li>CUSTOMIZABLE PER-KEY LIGHTING </li>
+        <li> 2 years of warranty </li>
+        <li>Cross-Platform Compatiblity</li>
+        <hr>
+        <span style="color:orange; font-size: 25px; font-weight: bold;"> sale 15% </span>
+        <br><br>
+        <del style="color: white;"><sup style="color: white;">EGP</sup><span style="color: white; font-size: 20px;">3,850</span><sup style="color: white;">00</sup></del>&nbsp;&nbsp;
+        <sup style="color: white;">EGP</sup><span style="color: white; font-size: 20px;" id="price">31280</span><sup style="color: white;">00</sup>&nbsp;&nbsp;&nbsp;
+        <span style="color: white;">Qty:</span>
+        <select id="select">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+        </select>
+    </div>
+    <div class="choose">
+        <img src="rgbKdot.png" class="colorK" id="rgbK" onclick="changeKeyboard('rgbK')">
+        <img src="greenKdot.png" class="colorK" id="greenK" onclick="changeKeyboard('greenK')">
+    </div>
+
+    <input type="button" value="Buy" name="n" class="buy" id="buy" onclick="buy('Kimg','keyboard')">
+    <script src="js.js"></script>
+</body>
+</html>

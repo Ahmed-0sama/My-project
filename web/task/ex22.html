@@ -1,0 +1,42 @@
+Ex(22).html
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Exercise 22</title>
+    </head>
+
+    <body>
+        <script>
+            function calc(){
+                disks = parseFloat(document.fo.disks.value);
+
+                if(document.fo.rad.value == 1)
+                {
+                    disksCost = 200 * disks;
+                    document.fo.price.value = disksCost - disksCost * (10 / 100);
+                }
+                else if(document.fo.rad.value == 2)
+                {
+                    disksCost = 300 * disks;
+                    document.fo.price.value = disksCost - disksCost * (15 / 100);
+                }
+                else if(document.fo.rad.value == 3)
+                {
+                    disksCost = 400 * disks;
+                    document.fo.price.value = disksCost - disksCost * (20 / 100);
+                }
+            }
+        </script>
+
+        <form name="fo">
+            Enter number of hard disks: <input type="text" name="disks"><br><br>
+            Select customer code:  <br>
+            <input type="radio" value="1" name="rad" checked> 80 GB <br>
+            <input type="radio" value="2" name="rad"> 120 GB <br>
+            <input type="radio" value="3" name="rad"> 300 GB
+            <br><br>
+            <input type="button" value="Total Price" onclick="calc()"><br><br>
+            Toral Price: <input type="text" name="price" disabled><br><br>
+        </form>
+    </body>
+</html>

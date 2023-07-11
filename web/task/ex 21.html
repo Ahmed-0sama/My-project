@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Exercise 21</title>
+    </head>
+
+    <body>
+        <script>
+            function calc(){
+                watts = parseFloat(document.fo.watts.value);
+
+                if(document.fo.se.value == 1)
+                {
+                    document.fo.bill.value = 10 + (0.01 * watts);
+                }
+                else if(document.fo.se.value == 2)
+                {
+                    document.fo.bill.value = 50 + (0.2 * watts);
+                }
+                else if(document.fo.se.value == 3)
+                {
+                    document.fo.bill.value = 75 + (0.5 * watts);
+                }
+            }
+        </script>
+
+        <form name="fo">
+            Enter kilowatts user: <input type="text" name="watts"><br><br>
+            Select customer code: 
+            <select name="se">
+                <option value="1">R</option>
+                <option value="2">C</option>
+                <option value="3">I</option>
+            </select>
+            <br><br>
+            <input type="button" value="Calculate Bill" onclick="calc()"><br><br>
+            Bill Value <input type="text" name="bill" disabled><br><br>
+        </form>
+    </body>
+</html>

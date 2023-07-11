@@ -1,0 +1,51 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="tabletest.css">
+    <title>table</title>
+    <style>
+        
+    </style>
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="logo" class="logo" onclick="home()">
+    </header>
+    <div class="main">
+        <table class="table">
+            <tr><td class="td1">Email</td><td class="td2"><input  type="email"></td></tr>
+            <tr><td class="td1">First Name</td><td class="td2"><input type="text"></td></tr>
+            <tr><td class="td1">Last Name</td><td class="td2"><input type="text"></td></tr>
+            <tr><td class="td1">Country</td><td class="td2"><input type="text"></td></tr>
+            <tr><td class="td1">City</td> <td class="td2"><input type="text"></td></tr>
+            <tr><td class="td1">Adress</td><td class="td2"><input type="text"></td></tr>
+            <tr><td class="td1">Phone Number</td class="td2"><td><input type="number"></td></tr>
+            <tr><td style="height: 15px;"> </td></tr>
+            <tr><td class="td1" rowspan="2">Payment</td><td class="td2"><input type="radio" name="a"><span>Cridet</span></td></tr>
+            <tr><td><input type="radio" name="a"><span>Cash</span></td></tr> 
+        </table>
+    </div>
+    <div class="product">
+        <img src="" id="finialproduct">
+
+    </div>
+    <div class="cash">
+        <h1 id="total"> Total Payment</h1> 
+        <h2 class="h2">Price per piece :</h2>  <h2 id="PPP" ></h2><br><br>
+        <h2 class="h2">Number of pieces :</h2> <h2 id="NOP" ></h2><br><br>
+        <h2 class="h2">Total taxes :</h2>      <h2 id="Taxes" ></h2><br><br>
+        <h2 class="h2">shipping fee :</h2>     <h2 id="shipping" > free shipping for U :)</h2><br><br>
+        <hr>
+        <h1 class="totalText">Total :          </h1><h1 id="Tota"></h1>
+
+        <button class="place">Place order</button>
+    </div>
+    <script src="js.js"></script>
+    <script>
+        finial();
+    </script>
+</body>
+</html>

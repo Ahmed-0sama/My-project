@@ -1,0 +1,412 @@
+*{
+    margin: 0;
+    padding: 0;
+    cursor: default;
+    transition: 0.25s;
+}
+@font-face {
+    font-family: digital-7;
+    src: url(digital-7.ttf);
+}
+html {
+    scroll-behavior: smooth;
+}
+body{
+    background: url('background.png');
+}
+img{
+    transition: 0.6s;
+}
+a{
+    text-decoration: none;
+}
+header{
+    background-color: rgba(12, 12, 12, 0.9);
+    padding: 30 30 30 70;
+}
+img{
+    cursor: pointer;
+}
+
+
+.logo{
+    width: 10em;
+    margin-left: 42% ;
+    cursor: pointer;
+}   
+.laptopcard,.pccard{
+    background: url('background.png');
+    border-style: solid ;
+    border-width: 3px;
+    border-color: #444352;
+    border-radius: 5px;
+    width: 82.5%;
+    aspect-ratio: 16/6;
+    box-shadow: -5px 5px 90px -23px black;
+    position: relative;    
+    margin: 2% 0% 0% 8.5%;
+    overflow: hidden;
+}
+.mouseCard,.keyboardCard,.headsetCard,.mateCard{
+    background: url('background.png');
+    border-style: solid ;
+    border-width: 3px;
+    border-color: #444352;
+    width: 40%;
+    aspect-ratio: 16/9;
+    box-shadow: -5px 5px 90px -23px black;
+    position: relative;
+}
+.mouseCard,.headsetCard{
+    float: left;
+    margin: 2% 0% 0% 8.5%;
+    overflow: hidden;
+
+}
+.keyboardCard,.mateCard{
+    float: right;
+    margin: 2% 8.5% 0% 0%;
+    overflow: hidden;
+}
+.t1,.price,.t2,.info,.infobig,.browse,.t2pc{
+    position: absolute;
+    z-index: 3;
+}
+.t1{
+    color: #7b7b87;
+    font-size: 1.5em;
+    top: 8%;
+    left: 10%;
+}
+.t2{
+    color: #FFFFFF;
+    font-size: 3em;
+    top: 60%;
+    left: 10%;
+}
+.t2pc{
+    color: #FFFFFF;
+    font-size: 2.3em;
+    top: 59%;
+    left: 8%;
+}
+.price{
+    color: #6b64d2;
+    font-size: 2em;
+    top: 20%;
+    left: 10%;
+}
+.info{
+    width: 8%;
+    top: 80%;
+    left: 10%;
+}
+.infobig{
+    width: 6%;
+    top: 75%;
+    left: 10%; 
+}
+.browse{
+    color: #FFFFFF;
+    font-size: 110%;
+    top: 85%;
+    left: 20%;    
+}
+.browse2{
+    position: absolute;
+    color: #FFFFFF;
+    font-size: 110%;
+    top: 82%;
+    left: 18%;
+        
+}
+.info:hover,.browse:hover,.infobig:hover,.browse2:hover{
+    cursor: pointer;
+}
+.M,.K,.H,.P,.L,.PC{
+    filter: drop-shadow(-5px 5px 10px rgba(-17, 13, 0, 0.5));
+}
+.M{
+    width: 56%;
+    top: -9%;
+    left: 55%;
+    position: absolute;
+    z-index: 2;
+}
+.M:hover{
+    width: 64%;
+    top: -12%;
+    left: 53%;
+}
+.K{
+    width: 56%;
+    top: 2%;
+    left: 60%;
+    position: absolute;
+    z-index: 2;
+}
+.K:hover{
+    width: 64%;
+    top: -1%;
+    left: 58%;
+}
+.H{
+    width: 62%;
+    top: -2%;
+    left: 62%;
+    position: absolute;
+    z-index: 2;
+}
+.H:hover{
+    width: 70%;
+    top: -5%;
+    left: 60%;
+}
+.P{
+    width: 71%;
+    top: 4%;
+    left: 52%;
+    position: absolute;
+    z-index: 2;
+}
+.p:hover{
+    width: 79%;
+    top: 1%;
+    left: 50%;
+}
+.L{
+    width: 54%;
+    top: -5%;
+    left: 53%;
+    position: absolute;
+    z-index: 2;
+}
+.L:hover{
+    width: 60%;
+    top: -8%;
+    left: 51%;
+}
+.PC{
+    width: 40%;
+    top: -16%;
+    left: 60%;
+    position: absolute;
+    z-index: 2;
+}
+.pc:hover{
+    width: 46%;
+    top: -19%;
+    left: 58%;
+}
+.tdown{
+    position: absolute;
+    color: rgba(255, 255, 255, 0.08);
+    font-size: 7em;
+    top: 33%;
+    left: -3%;
+}
+.tdown1{
+    position: absolute;
+    color: rgba(255, 255, 255, 0.08);
+    font-size: 7em;
+    top: 22%;
+    left: 0%;
+}
+.tdown2{
+    position: absolute;
+    color: rgba(255, 255, 255, 0.08);
+    font-size: 7em;
+    top: 41%;
+    left: -1%;
+}
+.footer{
+    background-color: rgba(12, 12, 12, 0.7);
+    aspect-ratio: 24/6;
+    position: relative;    
+    margin-top: 57%;
+    border-radius: 25px;
+}
+.about{
+    color :rgb(0, 0, 0);
+    background-color: #6b64d2;
+    padding: 0.4%;
+    margin: 3% 0% 3% 30% ;
+    border-radius: 10px;
+    font-size: 1.5em;
+    position: absolute;
+}
+
+
+.directMesseage,.contact{
+    width: 45%;
+    border-style: solid ;
+    border-width: 3px;
+    border-color: #444352;
+    border-radius: 15px;
+    aspect-ratio: 13/6;
+    position: relative;    
+    overflow: hidden;
+}
+.directMesseage{
+    float: left;
+    margin: 2% 0% 0% 3%;
+}
+.contact{
+    float: right;
+    margin: 2% 3% 0% 0%;
+}
+.t3{
+    position: absolute;
+    top: 6%;
+    left: 36%;
+    color: white;
+    text-decoration: underline;
+}
+.t4{
+    position: absolute;
+    top: 23%;
+    left: 10%;
+    color: white;
+    font-size: 1.5em;
+}
+.t5{
+    position: absolute;
+    top: 36%;
+    left: 10%;
+    color: white;
+    font-size: 1.5em;
+}
+.t6{
+    position: absolute;
+    top: 49%;
+    left: 10%;
+    color: white;
+    font-size: 1.5em;
+}
+.btn{
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    color: white;
+}
+.input1,.input2,.input3{
+    border-radius: 5px;
+    width: 40%;
+    color: black;
+    font-size: 1.3em;
+}
+.input1{
+    position: absolute;
+    top: 23%;
+    left: 33%;
+    height: 10%;
+}
+.input2{
+    position: absolute;
+    top: 36%;
+    left: 33%;
+    height: 10%;
+}
+.input3{
+    position: absolute;
+    top: 49%;
+    left: 33%;
+    height: 35%;
+}
+.btn{
+    position: absolute;
+    top: 74%;
+    left: 75%;
+    color: white;
+    width: 15%;
+    height: 10%;
+    background-color: #6b64d2;
+    border-radius: 8px;
+    font-size: 1.5em;
+    padding: 1.2px; 
+    cursor: pointer;  
+}
+.btn:hover{
+    top: 73%;
+    left: 74%;
+    width: 17%;
+    height: 12%;
+    font-size: 1.6em;
+    background-color: #648cd2;
+}
+.cont{
+    color: #6b64d2;
+    position: absolute;
+    top: 40%;
+    left: 30%;
+}
+.abot{
+    color: white;
+    position: absolute;
+    top: 7%;
+    left: 17%;
+    cursor: pointer;
+}
+.span{
+    color: #6b64d2;
+    cursor: pointer;
+}
+.dots{
+    position: absolute;
+    top: 20%;
+    left: 25%;
+    color: #6b64d2;
+}
+.facebook,.linkdn,.twitter,.youtube,.wattsapp{
+    width: 9%;
+    position: absolute;
+    cursor: pointer;
+}
+.facebook:hover,.linkdn:hover,.twitter:hover,.youtube:hover,.wattsapp:hover{
+    width: 12%;
+    position: absolute;
+}
+.facebook{
+    top: 65%;
+    left: 10%;
+}
+.linkdn{
+    top: 65%;
+    left: 27%;
+}
+.twitter{
+    top: 65%;
+    left: 44%;
+}
+.youtube{
+    top: 65%;
+    left: 62%;
+}
+.wattsapp{
+    top: 65%;
+    left: 80%;
+}
+.clock{
+    float: right;
+    position: relative;
+    margin: -1.84% 0% 0% 0%;
+    width: 15%;
+}
+#year{
+    color: #FFFFFF;
+    font-size: 2em;
+    position: absolute;
+    margin-top: 9%;
+    left: 18%;
+    z-index: 2;
+    font-family:'digital-7'
+}
+#t{
+    color: #FFFFFF;
+    position: absolute;
+    margin-top: 24%;
+    left: 25%;
+    z-index: 2;
+    font-size: 1.8em;
+    font-family:'digital-7'
+}

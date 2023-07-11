@@ -1,0 +1,40 @@
+HBox,GridPane{
+    -fx-background-color: rgb(18, 18, 18);
+}
+
+.gameName{
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-font-family: Georgia, Times, 'Times New Roman', serif;
+}
+
+.payBtn{
+    -fx-background-color: darkblue;
+    -fx-text-fill: white;
+    -fx-font-size: large;
+}
+
+Label{
+    -fx-text-fill: white;
+}
+
+.modifyButton{
+    -fx-background-color: #007aff;
+    -fx-text-fill: white;
+    -fx-font-family: Serif;
+    -fx-font-weight: bold;
+}
+
+.newPass{
+    -fx-font-family: Serif;
+    -fx-font-size: 15;
+}
+
+.signUp{
+    -fx-text-fill: white;
+    -fx-background-color: #007aff;
+}
+
+Button{
+    -fx-background-color: orange;
+}

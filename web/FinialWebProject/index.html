@@ -1,0 +1,100 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gaming</title>
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="logo" class="logo" onclick="home()">
+        <div class="clock">
+            <h1 id="year"></h1>
+            <h2 id="t"></h2>=
+        </div>
+    </header>
+    <div class="main">
+        <div class="laptopcard">
+            <h2 class="t1">starting at</h2>
+            <h2 class="price">$ 150,-</h2>
+            <h2 class="t2" onclick="laptop()">LAPTOP</h2>
+            <img src="info.png" alt="moreinfo" class="infobig"  onclick="laptop()">
+            <h2 class="browse2" onclick="laptop()">Browse</h2>
+            <h2 class="tdown">&nbsp LAPTOP</h2>
+            <img src="blacklap.png" class="L" onclick="laptop()">
+        </div>
+        <div class="pccard" >
+            <h2 class="t1">starting at</h2>
+            <h2 class="price">$ 150,-</h2>
+            <h2 class="t2pc" onclick="pc()">PERSONAL COMPUTER</h2>
+            <img src="info.png" alt="moreinfo" class="infobig"  onclick="pc()">
+            <h2 class="browse2" onclick="pc()">Browse</h2>
+            <h2 class="tdown1">PERSONAL</h2>
+            <h2 class="tdown2">COMPUTER</h2>
+            <img src="pc.png" class="PC" onclick="pc()">
+        </div>
+        <div class="mouseCard">
+            <h2 class="t1">starting at</h2>
+            <h2 class="price">$ 99,-</h2>
+            <h2 class="t2" onclick="mouse()">MICE</h2>
+            <img src="info.png" alt="moreinfo" class="info"  onclick="mouse()">
+            <h2 class="browse" onclick="mouse()">Browse</h2>
+            <h2 class="tdown">MICE</h2>
+            <img src="blackM.png" class="M" onclick="mouse()">
+        </div>
+        <div class="keyboardCard">
+            <h2 class="t1">starting at</h2>
+            <h2 class="price">$ 150,-</h2>
+            <h2 class="t2" onclick="keyboard()">KEYBOARD</h2>
+            <img src="info.png" alt="moreinfo" class="info"  onclick="keyboard()">
+            <h2 class="browse" onclick="keyboard()">Browse</h2>
+            <h2 class="tdown">KEYBOARD</h2>
+            <img src="KB.png" class="K" onclick="keyboard()">
+        </div>
+        <div class="headsetCard">
+            <h2 class="t1">starting at</h2>
+            <h2 class="price">$ 169,-</h2>
+            <h2 class="t2" onclick="headset()">HEADSET</h2>
+            <img src="info.png" alt="moreinfo" class="info"  onclick="headset()">
+            <h2 class="browse" onclick="headset()">Browse</h2>
+            <h2 class="tdown">HEADSET</h2>
+            <img src="wH.png" class="H" onclick="headset()">
+        </div>
+        <div class="mateCard">i
+            <h2 class="t1">starting at</h2>
+            <h2 class="price">$ 49,-</h2>
+            <h2 class="t2" onclick="headset()">MATES</h2>
+            <img src="info.png" alt="moreinfo" class="info"  onclick="pad()">
+            <h2 class="browse" onclick="pad()">Browse</h2>
+            <h2 class="tdown">MATES</h2>
+            <img src="whiteP.png" class="P" onclick="pad()">
+        </div>
+    </div>
+    <div class="footer">
+        <div class="directMesseage">
+            <h1 class="t3">direct Messeages</h1>
+            <label class="t4">Full-Name</label><input type="text" class="input1"><br>
+            <label class="t5">E-mail</label><input type="text" class="input2"><br>
+            <label class="t6">Content</label><textarea class="input3"></textarea><br>
+            <button class="btn">SEND</button>
+
+        </div>
+        <div class="contact">
+            <h1 class="abot" onclick="about()">Wanna Know More<span class="span"> About </span> Us ?</h1>
+            <h1 class="dots">------------------------------</h1>
+            <h1 class="cont">contact us through</h1>
+            <img src="facebook.png" alt="facebook" class="facebook" onclick="facebook()">
+            <img src="linkdn.png" alt="linkdn" class="linkdn" onclick="linkdn()">
+            <img src="twitter.png" alt="twitter" class="twitter" onclick="twitter()">
+            <img src="youtube.png" alt="youtube" class="youtube" onclick="youtube()">
+            <img src="wattsapp.png" alt="wattsapp" class="wattsapp" onclick="watsapp()">
+        </div>
+
+    </div>
+    <script src="js.js"></script>
+    <script>
+        time();
+    </script>
+</body>
+</html>

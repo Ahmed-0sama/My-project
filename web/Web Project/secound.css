@@ -1,0 +1,92 @@
+.a{
+    background-color: black;
+    width: 100%;
+    height: 13%;
+  }
+  
+  .b{
+    width: 10%;
+    height: 30%;
+    padding: 30 100 30 70;
+  }
+  .c{
+    padding-left: 60%;
+    text-decoration: none;
+
+  }
+  .d{
+    text-decoration: none;
+
+  }
+  .c :hover{
+    color: brown;
+  }
+  .d :hover{
+    color: brown;
+  }
+  .laptop{
+    border: 3px solid black;
+    background-color: rgba(0, 0, 0, 0);
+    background-size:cover;
+    width: 600px;
+    height: 500px;
+    margin-top: 25px;
+    margin-left: 15px;
+    float: left;
+  
+  }
+
+  .e{
+    background-color: rgba(0,0,0,0);
+    width: 550px;
+    height: 300px;
+    margin-left:650px;
+    margin-top:25px;
+  }
+  .f{
+    background-color: black;
+    width: 50px;
+    height: 300px;
+    margin-left:900px ;
+  }
+  .g{
+  margin-top: 150px;
+  margin-left: 600px;
+  width: 180px;
+  height: 40px;
+  border-radius: 25px;
+  background-color: rgb(250, 125, 9);
+  font-size: larger;
+  font-weight: bold;
+  }
+  input{
+    opacity: 0.5;
+    object-fit: scale-down;
+  }
+  .g:hover{
+    opacity: 1;
+    box-shadow: 0 0 5px rgb(222, 118, 20);
+      object-fit: fill;
+     
+  }
+  .q:hover{
+    opacity: 1;
+    object-fit: fill;
+    box-shadow: 0 0 10px rgb(0,0,0,0);
+  }
+  .q{
+    opacity: 0.6;
+    border-radius: 25px;
+    object-fit: scale-down;
+  }
+  .q44 :hover{
+opacity: 1;
+object-fit: fill;
+box-shadow: 0 0 10px rgb(0,0,0,0);
+  }
+  .q44{
+    
+      opacity: 0.6;
+      border-radius: 25px;
+      object-fit: scale-down;
+    }
