@@ -1,0 +1,89 @@
+Main,   LOAD Count    
+        SUBT One     
+        STORE Count   
+        SKIPCOND 800  
+        JUMP LoopEnd  
+        JUMP Function  
+        JUMP Main     
+
+LoopEnd, HALT
+
+
+Function,Load x
+Store temp
+Output
+Load two
+Store i
+Load x
+Subt one
+Store y
+
+loop1,Load i
+Store i1
+Load x
+Store x1
+Jump div
+
+check,Load r
+Skipcond 400
+Jump next
+Jump notprime
+
+next,Load i
+Add one
+Store i
+Load i
+Subt u
+Skipcond 000
+Jump prime
+Jump loop1
+
+div,Load x1
+Subt i1
+Skipcond 000
+Jump add1
+Jump divout
+
+add1,Store x1
+Load u
+Add one
+Store q
+Jump div
+
+divout,Load x1
+Store r
+jump check
+
+notprime,load zero
+Output
+Load x
+Subt one
+Store x
+Jump Main
+Halt
+
+prime,Load one
+Output
+Load x
+Subt one
+Store x
+Jump Main
+Halt
+
+x, DEC 15
+Count,DEC 16 
+
+i, DEC 0
+u,DEC 0
+i1,DEC 0
+x1,DEC 0
+q,DEC 0
+r,DEC 0
+y,DEC 0
+temp, DEC 0
+zero, DEC 0
+one,  DEC 1
+two,  DEC 2     
+One,  DEC 1         
+
+  END

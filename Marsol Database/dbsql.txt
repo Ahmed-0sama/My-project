@@ -1,0 +1,101 @@
+CREATE TABLE users (
+    user_id INT PRIMARY KEY,
+    user_name VARCHAR(255),
+    email VARCHAR(255),
+    address VARCHAR(255),
+    phone_number VARCHAR(20)
+);
+
+CREATE TABLE payment (
+    payment_id INT PRIMARY KEY,
+    payment_method VARCHAR(50),
+    payment_amount DECIMAL(10, 2)
+);
+
+CREATE TABLE reviews (
+    review_number INT PRIMARY KEY
+);
+
+CREATE TABLE markets (
+    market_id INT PRIMARY KEY,
+    market_name VARCHAR(255),
+    hot_line VARCHAR(20)
+);
+
+CREATE TABLE deliveryperson (
+    deliveryperson_id INT PRIMARY KEY,
+    deliveryperson_name VARCHAR(255),
+    phone_number VARCHAR(20)
+);
+
+CREATE TABLE orders (
+    order_id INT PRIMARY KEY,
+    payment_id INT UNIQUE, 
+    FOREIGN KEY (payment_id) REFERENCES payment(payment_id)
+);
+
+CREATE TABLE orderdetails (
+    process_id INT PRIMARY KEY,
+    order_id INT,
+    FOREIGN KEY (order_id) REFERENCES orders(order_id)
+);
+
+CREATE TABLE items (
+    item_id INT PRIMARY KEY,
+    market_id INT,
+    item_name VARCHAR(255),
+    produce_date DATE DEFAULT SYSDATE,
+    expiry_date DATE,
+    price DECIMAL(10, 2),
+    FOREIGN KEY (market_id) REFERENCES markets(market_id)
+);
+
+CREATE TABLE card (
+    card_id INT PRIMARY KEY,
+    user_id INT UNIQUE,
+    order_id INT UNIQUE,
+    deliveryperson_id INT UNIQUE,
+    card_date DATE DEFAULT SYSDATE,
+    FOREIGN KEY (user_id) REFERENCES users(user_id),
+    FOREIGN KEY (order_id) REFERENCES orders(order_id),
+    FOREIGN KEY (deliveryperson_id) REFERENCES deliveryperson(deliveryperson_id)
+);
+CREATE TABLE rating (
+    rating_percentage INT,
+    user_id INT,
+    market_id INT,
+    review_number INT,
+    FOREIGN KEY (market_id) REFERENCES markets(market_id),
+    FOREIGN KEY (review_number) REFERENCES reviews(review_number),
+    FOREIGN KEY (user_id) REFERENCES users(user_id),
+    PRIMARY KEY (user_id, market_id, review_number),
+    UNIQUE (review_number) 
+);
+
+CREATE TABLE item_lines (
+    process_id INT,
+    order_id INT,
+    item_id INT,
+    market_id INT,
+    item_price INT,
+    FOREIGN KEY (process_id) REFERENCES orderdetails(process_id),
+    FOREIGN KEY (order_id) REFERENCES orders(order_id),
+    FOREIGN KEY (item_id) REFERENCES items(item_id),
+    FOREIGN KEY (market_id) REFERENCES markets(market_id),
+    PRIMARY KEY (process_id, market_id, order_id, item_id)
+);
+
+CREATE TABLE shopping (
+    user_id INT,
+    shopping_id INT,
+    FOREIGN KEY (user_id) REFERENCES users(user_id),
+    PRIMARY KEY (user_id, shopping_id)
+);
+CREATE TABLE wandering (
+    market_id INT,
+    user_id INT,
+    shopping_id INT,
+    FOREIGN KEY (market_id) REFERENCES markets(market_id),
+    FOREIGN KEY (user_id, shopping_id) REFERENCES shopping(user_id, shopping_id),
+    PRIMARY KEY (market_id, user_id, shopping_id)
+);

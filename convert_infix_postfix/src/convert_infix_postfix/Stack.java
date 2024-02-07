@@ -6,7 +6,7 @@ package convert_infix_postfix;
 
 /**
  *
- * @author Eslam
+ * @author Ahmed
  */
 
 public class Stack {
